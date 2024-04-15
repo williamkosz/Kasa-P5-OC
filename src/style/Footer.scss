@@ -1,0 +1,23 @@
+@import "./index.scss";
+
+.footer-bar {
+    background-color: $black;
+    text-align: center;
+    padding-top: 66px;
+    padding-bottom: 29px;
+
+        img {
+            width: 122px;
+            height: 39.4px;
+            margin-bottom: 29px;
+        }
+
+        p {
+            color: $white;
+            font-size: 24px;
+            font-weight: 500;
+        }
+    
+}
+
+

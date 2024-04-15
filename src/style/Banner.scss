@@ -1,0 +1,26 @@
+@import "./index.scss";
+
+.banner-bar {
+    height: 223px;
+    margin: 0px 100px 43px 100px;
+    position: relative;
+    background: $black;
+    border-radius: 25px;
+
+    img {
+        @include banner-style;
+        filter: brightness(70%);
+    }
+
+    h1 {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        width: 100%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        @include text-shadow;
+        @include h1;
+    }
+}
+
