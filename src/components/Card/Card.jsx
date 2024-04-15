@@ -1,4 +1,4 @@
-import '../style/Card.scss'
+import './Card.scss'
 
 function Card (){
     //Affichage des cards

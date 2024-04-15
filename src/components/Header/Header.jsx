@@ -1,5 +1,5 @@
-import logoHeader from '../image/kasa_red.png'
-import '../style/Header.scss'
+import logoHeader from '../../image/kasa_red.png'
+import './Header.scss'
 import { NavLink } from 'react-router-dom'
 
 function Header () {

@@ -1,5 +1,5 @@
-import '../style/Footer.scss'
-import whiteLogo from '../image/kasa_white.svg'
+import './Footer.scss'
+import whiteLogo from '../../image/kasa_white.svg'
 
 function Footer () {
     const date = new Date();

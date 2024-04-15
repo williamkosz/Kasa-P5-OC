@@ -1,5 +1,5 @@
-import Banner from '../components/Banner';
-import Container from '../components/Container';
+import Banner from '../components/Banner/Banner';
+import Container from '../components/Container/Container';
 
 function Home() {
     return (

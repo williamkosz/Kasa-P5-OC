@@ -1,5 +1,4 @@
-import '../style/Banner.scss'
-import Sea from '../image/sea.png'
+import './Banner.scss'
 
 
 function Banner () {
