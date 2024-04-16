@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+
 // Colors 
 
 $white : #FFFFFF;
@@ -20,6 +21,12 @@ $black : #000000;
 @mixin h2 {
     font-size: 1.125rem;
     color: $white;
+}
+
+@mixin h3{
+    color: $white;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 @mixin center-space-between {

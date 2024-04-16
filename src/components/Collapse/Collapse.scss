@@ -1,1 +1,48 @@
-@import "./index.scss";
+@import "../../style/index.scss";
+
+.collapse-container{
+    width: 100%;
+
+    &.open {
+        .collapse-content{
+            max-height: 1000px;
+            transition: max-height 2s ease;
+            padding: 20px 5px 20px 5px;
+        }
+    }
+
+    .collapse-title{
+        align-items: center;
+        padding: 10px 20px 10px 15px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        background-color: $red;
+        
+    }
+
+    h3{
+        color: $white;
+        font-size: 18px;
+    }
+
+    .chevron{
+        width: 25px;
+        height: 25px;
+        transition: transform 0.1s ease;
+        cursor: pointer;
+
+        &.open{
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .collapse-content{
+        
+        line-height: 25px;
+        border-radius: 5px;
+        background-color: $grey ;
+        overflow: hidden;
+        max-height: 0;
+    }

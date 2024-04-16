@@ -7,12 +7,12 @@
     background: $black;
     border-radius: 25px;
 
-    img {
+    .imageBanner {
         @include banner-style;
         filter: brightness(70%);
     }
 
-    h1 {
+    .titleBanner {
         position: absolute;
         top: 40%;
         left: 50%;

@@ -1,12 +1,15 @@
 import './Banner.scss'
 
 
-function Banner () {
+function Banner ({imageUrl, title, opacity}) {
+    const opacityStyle = {
+        opacity: opacity,
+    };
     //Affichage Banner
     return (
         <div className='banner-bar'>
-            <img src="*" alt="*"></img>
-            <h1>Chez vous, partout et ailleurs</h1>
+            <img className='imageBanner' src={imageUrl} style={opacityStyle} alt="Banner"></img>
+            <h1 className='titleBanner'>{title}</h1>
         </div>
     )
 }
