@@ -14,7 +14,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route path="/accomodation/:id" element={<Accomodation />} />
+              <Route path="/accomodation/:appartementId" element={<Accomodation />} />
               {/* Page 404 Not Found */}
               <Route path="*" element={<NotFound />} />
             </Routes>

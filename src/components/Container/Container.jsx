@@ -8,10 +8,11 @@ function Container(){
     return (
         <div className='body-container'>
             {data.map((renting) => (
-                <NavLink key={renting.id} to={`src/pages/Accomodation/${renting.id}`}>
+                <NavLink key={renting.id} to={`/accomodation/${renting.id}`}>
                     <Card 
                     cover={renting.cover} 
-                    title={renting.title} className/>
+                    title={renting.title} 
+                    />
                 </NavLink>
             )
         )}
