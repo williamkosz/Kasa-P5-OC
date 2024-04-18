@@ -6,7 +6,7 @@ import right from "./right_arrow.png"
 export default function Carrousel ({ images }) {
 
     //Fonction pour appliquer les chevrons si plusieurs images
-    const [ singleImage, setSingleImage] = useState(images.length === 1);
+    const singleImage = images.length === 1;
 
 
     // Fonction pour défiler les images

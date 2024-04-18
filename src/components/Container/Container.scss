@@ -11,4 +11,11 @@
     gap: 50px;
     padding: 56px 50px 43px 50px;
     overflow: scroll;
+
+    @media (max-width : 768px) {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
 }
+
+

@@ -40,6 +40,12 @@
         align-items: center; 
         gap: 10px;
         justify-content: end;
+
+        p{
+            color: $red;
+            font-size: 18px;
+            font-weight: 500;
+        }
         
 
         img {

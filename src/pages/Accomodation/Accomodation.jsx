@@ -4,6 +4,7 @@ import Carrousel from "../../components/Carrousel/Carrousel"
 import Tags from "../../components/Tags/Tags";
 import Description from "../../components/Description/Description"
 import Equipement from "../../components/Equipement/Equipement"
+import Rating from "../../components/Rating/Rating";
 import "./Accomodation.scss"
 import Data from "../../Data/data.json"
 
@@ -33,9 +34,10 @@ export default function Accomodation (){
                 </div>
                 <div className="right-container">
                     <div className="host-container">
-                            <p>{appartement.host.name}</p>
+                        <p>{appartement.host.name}</p>
                         <img src={appartement.host.picture} alt = {"photo de " + appartement.host.name}></img>
                     </div>
+                    <Rating rating = {appartement.rating}/>
                 </div>
             </div>
             <div className="collapse-description-container">
