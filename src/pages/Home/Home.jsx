@@ -11,7 +11,11 @@ const Home = () => {
       <>
         <Banner 
         imageUrl ={Sea}
-        title={`Chez vous, partout et ailleurs`}
+        title={
+        <>
+          Chez vous, <span>partout et ailleurs</span>
+        </>
+        }
         opacity={0.6}
         />
         <Container />

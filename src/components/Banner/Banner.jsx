@@ -1,7 +1,7 @@
 import './Banner.scss'
 
 
-function Banner ({imageUrl, title, opacity}) {
+function Banner ({imageUrl, opacity, title}) {
     const opacityStyle = {
         opacity: opacity,
     };
