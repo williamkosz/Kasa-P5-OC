@@ -37,7 +37,9 @@ export default function Accomodation (){
                         <p>{appartement.host.name}</p>
                         <img src={appartement.host.picture} alt = {"photo de " + appartement.host.name}></img>
                     </div>
-                    <Rating rating = {appartement.rating}/>
+                    <div className="rating-container">
+                        <Rating rating = {appartement.rating}/>
+                    </div>
                 </div>
             </div>
             <div className="collapse-description-container">

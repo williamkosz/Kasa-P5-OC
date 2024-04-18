@@ -19,12 +19,18 @@
         display: flex;
         justify-content: space-between;
         background-color: $red;
+        @media (max-width : 375px) {
+            padding: 10px ;
+        }
         
     }
 
     h3{
         color: $white;
         font-size: 18px;
+        @media (max-width : 375px) {
+            font-size: 13px;
+        }
     }
 
     .chevron{

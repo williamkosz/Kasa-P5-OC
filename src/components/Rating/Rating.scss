@@ -4,4 +4,12 @@
     display: flex;
     justify-content: end;
     margin-top: 21px;
+
+    @media (max-width : 375px) {
+
+        img {
+            width: 18px;
+            height: 18px;
+        }
+    }
 }

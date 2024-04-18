@@ -7,13 +7,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    align-items: center; 
+    align-items: center;
+    
+    @media (max-width : 375px) {
+        height: 225px;
+        margin: 27px 20px 15px 20px;
+    }
     
 
     .slides-container{
         position: absolute;
         width: 100%;
         height: 100%;
+
+        @media (max-width : 375px) {
+            width: 335px;
+        }
         
 
         .slides {
@@ -31,6 +40,15 @@
 
         .left {
             padding-left: 32px;
+            position: absolute;
+            top: 45%;
+
+            @media (max-width : 375px) {
+                width: 24px;
+                height: 35px;
+                left : -5%;
+                
+            }
             
         }
 
@@ -38,6 +56,13 @@
             position: absolute;
             right: 0;
             padding-right: 32px;
+            top: 45%;
+
+            @media (max-width : 375px) {
+                width: 24px;
+                height: 35px;
+                right: -5%;
+            }
         }
         
     }
@@ -49,5 +74,10 @@
         background-color: rgba(0, 0, 0, 0.6);
         border-radius: 15px;
         padding: 5px 10px;
+
+        @media (max-width : 375px) {
+            font-size: 12px;
+            bottom: 8%;
+        }
     }
 }

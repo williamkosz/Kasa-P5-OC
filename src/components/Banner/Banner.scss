@@ -6,13 +6,13 @@
     position: relative;
     background: $black;
     border-radius: 25px;
-    
 
     .imageBanner {
         @include banner-style;
         filter: brightness(70%);
         @media (max-width : 375px) {
-            height: 150px;
+            height: 111px;
+            border-radius: 10px;
         }
     }
 
@@ -35,7 +35,8 @@
 
     @media (max-width : 375px) {
         margin: 27px 20px 22px 20px;
-        height: 150px;
+        height: 111px;
+        border-radius: 10px;
     }
 }
 
