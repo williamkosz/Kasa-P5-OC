@@ -10,7 +10,7 @@
     .imageBanner {
         @include banner-style;
         filter: brightness(70%);
-        @media (max-width : 375px) {
+        @media (max-width : 425px) {
             height: 111px;
             border-radius: 10px;
         }
@@ -26,7 +26,7 @@
         @include text-shadow;
         @include h1;
 
-        @media (max-width : 375px){
+        @media (max-width : 425px){
             font-size: 24px;
             text-align: left;
             padding-left: 20px;
@@ -46,7 +46,7 @@
         }
     }
 
-    @media (max-width : 375px) {
+    @media (max-width : 425px) {
         margin: 27px 20px 22px 20px;
         height: 111px;
         border-radius: 10px;

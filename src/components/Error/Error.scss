@@ -8,7 +8,7 @@
     margin-bottom: 139px;
     align-items: center;
 
-    @media (max-width : 375px){
+    @media (max-width : 425px){
         gap: 113px;
     }
 
@@ -18,7 +18,7 @@
         font-weight: 700;
         margin: 0;
 
-        @media (max-width : 375px){
+        @media (max-width : 425px){
             font-size: 96px;
         }
     }
@@ -30,7 +30,7 @@
         text-align: center;
         font-weight: 500;
 
-        @media (max-width : 375px){
+        @media (max-width : 425px){
             font-size: 18px;
         }
     }
@@ -42,7 +42,7 @@
         cursor: pointer;
         font-weight: 500;
 
-        @media (max-width : 375px){
+        @media (max-width : 425px){
             font-size: 14px;
         }
     }

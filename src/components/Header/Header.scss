@@ -4,13 +4,13 @@
     @include center-space-between;
     margin: 45px 100px 50px 100px;
 
-    @media (max-width : 375px){
+    @media (max-width : 425px){
         margin: 20px 20px 27px 20px;
     }
 
     img {
 
-        @media (max-width : 375px) {
+        @media (max-width : 425px) {
             width: 145px;
             height:50px;
         }
@@ -19,7 +19,7 @@
         .navbar {
             display: flex;
             gap: 57px;
-            @media (max-width : 375px){
+            @media (max-width : 425px){
                 gap : 26px;
             }
 
@@ -31,7 +31,7 @@
                 font-family: Montserrat;
                 position: relative;
 
-                @media (max-width : 375px){
+                @media (max-width : 425px){
                     font-size: 12px;
                 }
 
@@ -51,7 +51,7 @@
                     background-color: $black;
                     transition: width 0.6s; 
 
-                    @media (max-width:375px) {
+                    @media (max-width:425px) {
                         height: 1px; 
                         bottom: -5px; 
                     }
