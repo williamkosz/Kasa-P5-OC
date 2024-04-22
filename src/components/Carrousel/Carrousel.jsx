@@ -10,14 +10,14 @@ export default function Carrousel ({ images }) {
 
 
     // Fonction pour défiler les images
-    const [ currentIndex, setCurrentIndex] = useState(0);
+    const [ currentSlide, setCurrentSlide] = useState(0);
 
     const nextSlide = () => {
-        setCurrentIndex(prevIndex => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+        setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
     }
 
     const prevSlide = () => {
-        setCurrentIndex(prevIndex => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+        setCurrentSlide((prevSlide) => (prevSlide - 1 + images.length) % images.length);
     }
 
     return (
@@ -28,15 +28,19 @@ export default function Carrousel ({ images }) {
                     <img src={right} className='right' alt='right arrow' onClick={nextSlide}/>
                 </div>
              )}
-             <div className='slides-container'>
-                <img src={images[currentIndex]} 
-                alt={currentIndex +1}
+             <div className='slides-container' style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+                {images.map((image, index) => (
+                <img 
+                key={index}
+                src={image} 
+                alt={`Slide ${index}`}
                 className='slides'
                 />
+                ))}
              </div>
              {!singleImage && (
                 <div className='imageNumber'>
-                    {currentIndex + 1} / {images.length}
+                    {currentSlide + 1} / {images.length}
                 </div>
              )}
         </div>

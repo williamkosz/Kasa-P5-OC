@@ -1,5 +1,22 @@
 @import '../../style/index.scss';
 
+.carrousel-container {
+
+    margin-left: 100px;
+    margin-right: 100px;
+
+    @media (max-width : 768px) {
+        margin: 15px 20px 13px 20px;
+        flex-direction: column; 
+
+        @media (max-width : 425px) {
+            margin: 15px 20px 13px 20px; 
+        }
+
+    }
+}
+
+
 .all-info-container {
     margin: 30px 100px 50px 100px;
    

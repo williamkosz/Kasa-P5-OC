@@ -2,34 +2,33 @@
 
 .carrousel {
     position: relative;
-    margin: 50px 100px 30px 100px;
+    width: 100%;
     height: 415px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
+    margin: auto;
+    border-radius: 25px;
+    overflow: hidden; // Pour cacher les images qui dépassent
+
+ 
     
     @media (max-width : 425px) {
         height: 225px;
-        margin: 27px 20px 15px 20px;
     }
     
 
     .slides-container{
-        position: absolute;
+        display: flex; // Utilisation de flexbox pour aligner les images horizontalement
+        transition: transform 0.5s ease; // Animation de transition pour le glissement
         width: 100%;
         height: 100%;
 
-        @media (max-width : 425px) {
-            width: 335px;
-        }
+       
         
 
         .slides {
-            width: 100%;
-            height: 100%;
+            flex: 0 0 100%;
+            width: 100%; // Pour que chaque image prenne la largeur complète du conteneur
+            height: 100%; // Pour que la hauteur de l'image soit ajustée en fonction de la largeur
             object-fit: cover;
-            border-radius: 25px;
         }
     }
    
@@ -37,36 +36,38 @@
     .btn-slide {
         z-index: 1;
         width: 100%;
+        cursor: pointer;
 
         .left {
             padding-left: 32px;
             position: absolute;
             top: 45%;
-
-            @media (max-width : 375px) {
-                width: 24px;
-                height: 35px;
-                left : -5%;
-                
-            }
+            z-index: 1;
 
             @media (max-width : 425px) {
                 width: 24px;
                 height: 35px;
+                left: -5%;
             }
+
+            @media (max-width : 375px) {
+                width: 24px;
+                height: 35px     
+            }
+
             
         }
 
         .right {
             position: absolute;
-            right: 0;
-            padding-right: 32px;
+            right: 5%;
             top: 45%;
+            z-index: 1;
 
             @media (max-width : 375px) {
                 width: 24px;
                 height: 35px;
-                right: -5%;
+                right: 5%;
             }
 
             @media (max-width : 425px) {
@@ -79,6 +80,7 @@
 
     .imageNumber {
         bottom: 10%;
+        left: 47%;
         position: absolute;
         color: $white;
         background-color: rgba(0, 0, 0, 0.6);

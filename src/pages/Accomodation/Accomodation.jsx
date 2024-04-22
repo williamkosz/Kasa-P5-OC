@@ -22,8 +22,10 @@ export default function Accomodation (){
 
     return(
         <>
-            <Carrousel images = {appartement.pictures}
+            <div className="carrousel-container">
+                <Carrousel images = {appartement.pictures}
             />
+            </div>
             <div className="all-info-container">
                 <div className="left-container">
                     <div className="title-location">
